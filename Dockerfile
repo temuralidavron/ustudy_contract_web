@@ -2,7 +2,7 @@
 FROM python:3.12-slim
 
 # System dependencies
-RUN apt-get update && apt-get install -y build-essential libpq-dev
+RUN apt-get update && apt-get install -y build-essential libpq-dev netcat
 
 # Workdir
 WORKDIR /app
