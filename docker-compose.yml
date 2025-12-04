@@ -29,7 +29,7 @@ services:
       - static_volume:/app/static
       - media_volume:/app/media
     ports:
-      - "8080:80"
+      - "8090:80"
 
 volumes:
   postgres_data:
