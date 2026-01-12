@@ -26,12 +26,12 @@ class ContractListSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            'initial_price',
+            # 'initial_price',
             'created_at',
             'updated_at',
-            'price',
-            'contract_number',
-            'monthly_duration',
+            # 'price',
+            # 'contract_number',
+            # 'monthly_duration',
             'signature'
 
 
@@ -43,6 +43,7 @@ class ContractDetailSerializer(serializers.ModelSerializer):
         model = Contract
         fields = [
             'id',
+            'course',
             'user',
             'course_type',
             'full_name',
@@ -61,12 +62,12 @@ class ContractDetailSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            'initial_price',
+            # 'initial_price',
             'created_at',
             'updated_at',
-            'price',
-            'contract_number',
-            'monthly_duration',
+            # 'price',
+            # 'contract_number',
+            # 'monthly_duration',
             'signature'
 
         ]
@@ -94,12 +95,12 @@ class ContractCreateSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            'initial_price',
+            # 'initial_price',
             'created_at',
             'updated_at',
-            'price',
-            'contract_number',
-            'monthly_duration',
+            # 'price',
+            # 'contract_number',
+            # 'monthly_duration',
             'signature'
 
         ]
@@ -127,12 +128,12 @@ class ContractUpdateSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            'initial_price',
+            # 'initial_price',
             'created_at',
             'updated_at',
-            'price',
-            'contract_number',
-            'monthly_duration',
+            # 'price',
+            # 'contract_number',
+            # 'monthly_duration',
             'signature'
 
         ]

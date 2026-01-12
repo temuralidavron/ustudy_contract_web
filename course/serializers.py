@@ -10,7 +10,10 @@ class CourseDetailSerializer(serializers.ModelSerializer):
             'description',
             'price',
             'duration',
-            'salary_middle'
+            'salary_middle',
+            'initial_price',
+            'contract_number',
+            'monthly_duration',
 
         ]
 
