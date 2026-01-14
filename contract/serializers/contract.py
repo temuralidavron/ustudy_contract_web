@@ -9,7 +9,6 @@ class ContractListSerializer(serializers.ModelSerializer):
         fields = [
             'id',
             'user',
-            'course_type',
             'full_name',
             'phone',
             'address',
@@ -26,13 +25,9 @@ class ContractListSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            # 'initial_price',
             'created_at',
-            'updated_at',
-            # 'price',
-            # 'contract_number',
-            # 'monthly_duration',
             'signature'
+            'contract_number'
 
 
         ]
@@ -43,9 +38,7 @@ class ContractDetailSerializer(serializers.ModelSerializer):
         model = Contract
         fields = [
             'id',
-            'course',
             'user',
-            'course_type',
             'full_name',
             'phone',
             'address',
@@ -62,23 +55,18 @@ class ContractDetailSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            # 'initial_price',
             'created_at',
-            'updated_at',
-            # 'price',
-            # 'contract_number',
-            # 'monthly_duration',
             'signature'
+            'contract_number'
+
 
         ]
-
 
 class ContractCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contract
         fields = [
             'user',
-            'course_type',
             'full_name',
             'phone',
             'address',
@@ -95,13 +83,10 @@ class ContractCreateSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            # 'initial_price',
             'created_at',
-            'updated_at',
-            # 'price',
-            # 'contract_number',
-            # 'monthly_duration',
             'signature'
+            'contract_number'
+
 
         ]
 
@@ -110,8 +95,8 @@ class ContractUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contract
         fields = [
+            'id',
             'user',
-            'course_type',
             'full_name',
             'phone',
             'address',
@@ -128,12 +113,9 @@ class ContractUpdateSerializer(serializers.ModelSerializer):
             'parent_document_given_date',
             'is_confirmed',
             'saved',
-            # 'initial_price',
             'created_at',
-            'updated_at',
-            # 'price',
-            # 'contract_number',
-            # 'monthly_duration',
             'signature'
+            'contract_number'
+
 
         ]
