@@ -9,7 +9,7 @@ class CourseInfo(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2,blank=True, null=True)
     description = models.TextField(blank=True, null=True)
     # salary_middle=models.CharField(max_length=500)
-    contract_number = models.PositiveIntegerField(blank=True, null=True)
+    # contract_number = models.PositiveIntegerField(blank=True, null=True)
     monthly_duration = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
 
 
