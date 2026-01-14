@@ -26,7 +26,7 @@ class ContractListSerializer(serializers.ModelSerializer):
             'is_confirmed',
             'saved',
             'created_at',
-            'signature'
+            'signature',
             'contract_number'
 
 
@@ -56,7 +56,7 @@ class ContractDetailSerializer(serializers.ModelSerializer):
             'is_confirmed',
             'saved',
             'created_at',
-            'signature'
+            'signature',
             'contract_number'
 
 
@@ -84,7 +84,7 @@ class ContractCreateSerializer(serializers.ModelSerializer):
             'is_confirmed',
             'saved',
             'created_at',
-            'signature'
+            'signature',
             'contract_number'
 
 
@@ -114,7 +114,7 @@ class ContractUpdateSerializer(serializers.ModelSerializer):
             'is_confirmed',
             'saved',
             'created_at',
-            'signature'
+            'signature',
             'contract_number'
 
 
