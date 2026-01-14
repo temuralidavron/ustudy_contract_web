@@ -23,9 +23,8 @@ class CourseCreateSerializer(serializers.ModelSerializer):
             "title",
             'description',
             'price',
+            'initial_price',
             'monthly_duration',
-            'salary_middle',
-
 
         ]
 
@@ -33,12 +32,12 @@ class CourseUpdateSerializer(serializers.ModelSerializer):
     class Meta:
         model=CourseInfo
         fields =[
-            'id',
+            "id",
             "title",
             'description',
             'price',
+            'initial_price',
             'monthly_duration',
-            'salary_middle'
 
         ]
 
@@ -47,12 +46,13 @@ class CourseDeleteSerializer(serializers.ModelSerializer):
     class Meta:
         model=CourseInfo
         fields =[
-            'id',
+            "id",
             "title",
             'description',
             'price',
+            'initial_price',
             'monthly_duration',
-            'salary_middle'
+
         ]
 
 
@@ -64,6 +64,7 @@ class CourseListSerializer(serializers.ModelSerializer):
             "title",
             'description',
             'price',
+            'initial_price',
             'monthly_duration',
-            'salary_middle'
+
         ]
