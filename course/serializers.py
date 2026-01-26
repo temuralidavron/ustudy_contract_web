@@ -9,7 +9,6 @@ class CourseDetailSerializer(serializers.ModelSerializer):
             "title",
             'description',
             'price',
-            'initial_price',
             'monthly_duration',
 
         ]
@@ -23,7 +22,6 @@ class CourseCreateSerializer(serializers.ModelSerializer):
             "title",
             'description',
             'price',
-            'initial_price',
             'monthly_duration',
 
         ]
@@ -36,7 +34,6 @@ class CourseUpdateSerializer(serializers.ModelSerializer):
             "title",
             'description',
             'price',
-            'initial_price',
             'monthly_duration',
 
         ]
@@ -50,7 +47,6 @@ class CourseDeleteSerializer(serializers.ModelSerializer):
             "title",
             'description',
             'price',
-            'initial_price',
             'monthly_duration',
 
         ]
@@ -64,7 +60,8 @@ class CourseListSerializer(serializers.ModelSerializer):
             "title",
             'description',
             'price',
-            'initial_price',
             'monthly_duration',
 
         ]
+
+

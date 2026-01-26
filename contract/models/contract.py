@@ -21,7 +21,9 @@ class DocumentType(models.TextChoices):
 class Contract(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     course = models.ForeignKey(CourseInfo,on_delete=models.CASCADE,related_name="courses")
-    full_name = models.CharField(max_length=255)
+    first_name  = models.CharField(max_length=255,blank=True, null=True)
+    last_name   = models.CharField(max_length=255,blank=True, null=True)
+    middle_name   = models.CharField(max_length=255,blank=True, null=True)
     phone = models.CharField(max_length=13)
     age = models.PositiveIntegerField()
     address = models.TextField()
@@ -42,7 +44,7 @@ class Contract(models.Model):
 
     is_confirmed = models.BooleanField(default=False)
     saved=models.BooleanField(default=False)
-    # initial_price = models.DecimalField(max_digits=10, decimal_places=2,blank=True,null=True)  # dastlabki narx
+    initial_price = models.DecimalField(max_digits=10, decimal_places=2,blank=True,null=True)  # dastlabki narx
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     # price = models.DecimalField(max_digits=10, decimal_places=2,blank=True, null=True)
@@ -53,4 +55,4 @@ class Contract(models.Model):
 
 
     def __str__(self):
-        return f"{self.user.username} - {self.course_type}"
+        return f"{self.user.username}"

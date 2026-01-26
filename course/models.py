@@ -5,7 +5,7 @@ from django.db import models
 
 class CourseInfo(models.Model):
     title = models.CharField(max_length=500)
-    initial_price = models.DecimalField(max_digits=10, decimal_places=2,blank=True,null=True)  # dastlabki narx
+    # initial_price = models.DecimalField(max_digits=10, decimal_places=2,blank=True,null=True)  # dastlabki narx
     price = models.DecimalField(max_digits=10, decimal_places=2,blank=True, null=True)
     description = models.TextField(blank=True, null=True)
     # salary_middle=models.CharField(max_length=500)

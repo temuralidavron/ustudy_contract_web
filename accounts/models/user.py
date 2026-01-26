@@ -4,6 +4,6 @@ from django.db import models
 class CustomUser(AbstractUser):
     is_admin = models.BooleanField(default=False)
     age = models.IntegerField(blank=True, null=True)
-    phone = models.CharField(max_length=13)
+    phone = models.CharField(max_length=20, blank=True, null=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
