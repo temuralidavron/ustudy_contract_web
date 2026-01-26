@@ -56,7 +56,40 @@ class ContractDetailSerializer(serializers.ModelSerializer):
             'is_confirmed',
             'saved',
             'created_at',
+<<<<<<< HEAD
             'signature'
+=======
+            'signature',
+            'contract_number'
+
+
+        ]
+
+<<<<<<< HEAD
+class ContractCreateSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contract
+        fields = [
+            'user',
+            'full_name',
+            'phone',
+            'address',
+            'age',
+            'document_type',
+            'document_series',
+            'jshshir',
+            'document_given_by',
+            'document_given_date',
+            'parent_full_name',
+            'parent_document_series',
+            'parent_jshshir',
+            'parent_document_given_by',
+            'parent_document_given_date',
+            'is_confirmed',
+            'saved',
+            'created_at',
+            'signature',
+>>>>>>> e249fb8 (full operation serializers new)
             'contract_number'
 
 
