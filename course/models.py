@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-
+#commit
 
 class CourseInfo(models.Model):
     title = models.CharField(max_length=500)
